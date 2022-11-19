@@ -6,11 +6,17 @@ const passport = require('passport');
 const path = require('path');
 const config = require("./config/db");
 const account = require("./routes/account");
-
+//const session = require("express-session");
 
 const app = express();
 
 const port = 3000;
+
+app.use(passport.initialize());
+//app.use(passport.session());
+
+
+require('./config/passport')(passport);
 
 app.use(cors());
 app.use(bodyParser.json());
