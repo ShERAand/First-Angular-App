@@ -1,1 +1,38 @@
-<p>reg works!</p>
+<body class="text-center container">
+  <form (submit)="signUp()" class="form-signin">
+    <img
+      class="mb-4"
+      src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
+      alt=""
+      width="72"
+      height="72"
+    />
+    <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+    <input [(ngModel)]="name" name="name" type="name" id="inputName" class="form-control" placeholder="Name" />
+    <input  [(ngModel)]="login" name="login" type="login"
+      id="inputLogin"
+      class="form-control mt-3"
+      placeholder="Login"
+    />
+    <input
+      [(ngModel)]="email"
+      name="email"
+      type="email"
+      id="inputEmail"
+      class="form-control mt-3"
+      placeholder="Email address"
+    />
+    <input
+      [(ngModel)]="password"
+      name="password"
+      type="password"
+      id="inputPassword"
+      class="form-control mt-3"
+      placeholder="Password"
+    />
+    <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">
+      Sign up
+    </button>
+    <p class="mt-5 mb-3 text-muted">© 2022-2023</p>
+  </form>
+</body>
