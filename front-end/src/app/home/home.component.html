@@ -1,23 +1,23 @@
 <div class="nav-scroller py-1 mb-2">
   <nav class="nav d-flex justify-content-between">
-    <a class="p-2 link-secondary" (click)="setCategory({category : 'Мир'})"> Мир</a>
-    <a class="p-2 link-secondary" (click)="setCategory({category : 'Технологии'})">Технологии</a>
-    <a class="p-2 link-secondary" (click)="setCategory({category : 'Дизайн'})">Дизайн</a>
-    <a class="p-2 link-secondary" (click)="setCategory({category : 'Культура'})">Культура</a>
-    <a class="p-2 link-secondary" (click)="setCategory({category : 'Бизнес'})">Бизнес</a>
-    <a class="p-2 link-secondary" (click)="setCategory({category : 'Наука'})">Наука</a>
-    <a class="p-2 link-secondary" (click)="setCategory({category : 'Здоровье'})">Здоровье</a>
-    <a class="p-2 link-secondary" (click)="setCategory({category : 'Стиль'})">Стиль</a>
-    <a class="p-2 link-secondary" (click)="setCategory({category : 'Путешествия'})">Путешествия</a>
+    <a class="p-2 links" (click)="setCategory({category : 'Мир'})"> Мир</a>
+    <a class="p-2 links" (click)="setCategory({category : 'Спорт'})">Спорт</a>
+    <a class="p-2 links" (click)="setCategory({category : 'Развлечения'})">Развлечения</a>
+    <a class="p-2 links" (click)="setCategory({category : 'Общество'})">Общество</a>
+    <a class="p-2 links" (click)="setCategory({category : 'Бизнес'})">Бизнес</a>
+    <a class="p-2 links" (click)="setCategory({category : 'Саморазвитие'})">Саморазвитие</a>
+    <a class="p-2 links" (click)="setCategory({category : 'Здоровье'})">Здоровье</a>
+    <a class="p-2 links" (click)="setCategory({category : 'Самореализация'})">Самореализация</a>
+    <a class="p-2 links" (click)="setCategory({category : 'Путешествия'})">Путешествия</a>
   </nav>
 </div>
 
 <div class="row d-flex">
-  <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
-    <div class="col-md-6 px-0">
-      <h1 class="display-4 fst-italic">Добро пожаловать!</h1>
-      <p class="lead my-3">В данном блоге демонстрируются информация о мире, технологиях, дезайне, культуре, бизнесе, науке, здоровье, стиле, путешествиях.</p>
-      <p  class="lead mb-0"><a [routerLink]="['/reg']" class="text-white fw-bold" >Зарегистрироваться</a></p>
+  <div class="p-4 p-md-5 mb-4 rounded text-bg-danger">
+    <div class="col-md-6 px-0 m-auto">
+      <h1 class="display-4 fst-italic m-auto">Добро пожаловать!</h1>
+      <p class="lead my-3 m-auto">В данном блоге демонстрируются информация о мире, спорте, развлечениях, обществе, бизнесе, саморазвитии, здоровье, самореализации и путешествиях.</p>
+      <p  class="lead mb-0 m-auto"><a [routerLink]="['/reg']" class="text-white fw-bold" >Зарегистрироваться</a></p>
     </div>
   </div>
 
@@ -30,7 +30,7 @@
           <div class="mb-1 text-muted">{{post["date"] | date: "short"}}</div>
           <quill-view [content]="post.photo"></quill-view>
 
-          <a class="stretched-link">Continue reading</a>
+          <a class="stretched-link">Открыть пост</a>
         </div>
         <div class="col-auto d-none d-lg-block">
           <quill-view [content]="post.text"></quill-view>
