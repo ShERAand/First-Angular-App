@@ -12,20 +12,12 @@
     "body-parser": "*",
     "cors": "*",
     "express": "*",
-    "express-session": "^1.17.3",
     "jsonwebtoken": "*",
     "mongoose": "*",
+    "nodemon": "^2.0.20",
     "passport": "*",
     "passport-jwt": "*"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ShERAand/First-Angular-App.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ShERAand/First-Angular-App/issues"
-  },
-  "homepage": "https://github.com/ShERAand/First-Angular-App#readme"
+  "license": "ISC"
 }

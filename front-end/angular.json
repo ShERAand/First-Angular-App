@@ -30,9 +30,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/quill/dist/quill.core.css",
+              "./node_modules/quill/dist/quill.bubble.css",
+              "./node_modules/quill/dist/quill.snow.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/quill/dist/quill.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -102,6 +107,6 @@
     }
   },
   "cli": {
-    "analytics": "fd80b336-d849-4017-a373-f973319818d8"
+    "analytics": "32ceb6db-5427-4ebe-9ff5-107fabf68ccd"
   }
 }
